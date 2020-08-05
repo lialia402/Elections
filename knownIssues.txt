@@ -1,0 +1,12 @@
+Known Issues:
+1. If any wrong information is typed the user gets a message and is back to the main menu
+  for example: if you entered a 3 number id it will say the id is wrong and couldn't create the user but wont ask you to
+  type again(it's more of a feature than an issue)
+2. When adding a citizen to be a member of a party it has default values for name and year because if the id of the citizen is already in the array
+   we add him to the members array by pointer and we dont need to create another citizen
+3. Some functions are not in use we didnt delete them for future use.
+4. We only print the party name for the candidate to not overload to much text for the user
+5. When adding a candidate we first create it as a citizen and then pass it to the candidate constructor
+6. if a user didnt come protected we dont let him vote - the law is the law
+7.The exception for id and age is thrown only after we asked for all the information that's because the exceptions are inside the c'tor
+8.We didnt add anymore exceptions except where we were asked
